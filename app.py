@@ -232,7 +232,11 @@ if option == "🔍 Player Search":
             title=f"{player_name} Batting Analysis"
         )
 
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(
+    fig2,
+    use_container_width=True,
+    config={"staticPlot": True}
+)
 
     # =====================================================
     # BOWLING ANALYTICS
@@ -393,7 +397,11 @@ elif option == "⚔️ Player Comparison":
             title=f"{player1} vs {player2}"
         )
 
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(
+    fig2,
+    use_container_width=True,
+    config={"staticPlot": True}
+)
 
 # =========================================================
 # 🔥 TOP BATTERS
